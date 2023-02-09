@@ -1,7 +1,7 @@
 const {readFileSync, writeFileSync} = require('fs')
 
-const first = readFileSync('./Tuts/content/subcontent/first.txt','utf8')
-const second = readFileSync('./Tuts/content/second.txt', 'utf8')
+const first = readFileSync('./content/subcontent/first.txt','utf8')
+const second = readFileSync('./content/second.txt', 'utf8')
 
 // console.log(first,second)
 
@@ -11,4 +11,4 @@ const second = readFileSync('./Tuts/content/second.txt', 'utf8')
 
 
 //this line of codes APPENDS the data to the existing data present in the textfile
-writeFileSync('./Tuts/content/subcontent/answer.txt',`here is the result ${first}  and ${second}`,{flag:'a'})
+writeFileSync('./content/subcontent/answer.txt',`here is the result ${first}  and ${second}`,{flag:'a'})
