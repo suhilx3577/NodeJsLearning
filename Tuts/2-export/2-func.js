@@ -1,6 +1,6 @@
 const greet = (name) => {
     console.log(`Hello, ${name}`)
 }
-module.exports=greet
+module.exports = {greet}
 
 // console.log(module)
