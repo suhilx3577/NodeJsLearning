@@ -1,29 +1,9 @@
-const { readFile , writeFile} = require('fs');
+const lo = require('lodash')
 
-readFile('./content/first.txt','utf8',(err,result)=>{
-    if(err){
-        console.log(err)
-        return
-    }
-    const first = result
-    
-    readFile('./content/second.txt','utf8',(err,result)=>{
-        if(err){
-            console.log(err)
-            return
-        }
-        const second = result;
+const items = [1,[2,[3,[4]]]]
 
-        writeFile(
-            './content/result.txt',
-            `here is the result : ${first} and ${second}`,
-            (err,result)=>{
-                if(err){
-                    console.log(err)
-                    return
-                }
-                console.log(result)
-            }
-        )
-    })
-})
+const newitems =  lo.flattenDeep(items)
+
+console.log(newitems)
+
+console.log('Hello people')

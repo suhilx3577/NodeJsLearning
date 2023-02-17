@@ -1,0 +1,26 @@
+{
+  "name": "nodelearn",
+  "version": "1.0.0",
+  "description": "Learning the Node and Express JS",
+  "main": "1-intro.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhilx3577/NodeJsLearning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suhilx3577/NodeJsLearning/issues"
+  },
+  "homepage": "https://github.com/suhilx3577/NodeJsLearning#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
